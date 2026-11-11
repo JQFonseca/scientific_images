@@ -1,4 +1,4 @@
-# Why the Format Size and Resolution of Your Scientific Images Matter
+# Why the Format, Size and Resolution of Your Scientific Images Matter
 
 ## A practical guide for researchers
 
