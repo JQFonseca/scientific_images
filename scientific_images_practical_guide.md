@@ -146,9 +146,7 @@ Resampling changes the number of pixels. Upsampling can create a larger pixel gr
 ---
 
 ## 4. Match the output to its destination
-
 ### Presentations
-
 Think primarily in pixels because the output is a screen. A 1920 × 1080 presentation cannot display the full detail of a 6000 × 4000 pixel image occupying one small part of a slide.
 
 Prepare an appropriately sized PNG or JPEG before inserting it. This keeps the presentation responsive, pleasant to edit and present, and easy to share without enormous attachments or slow cloud synchronisation.
@@ -156,7 +154,6 @@ Prepare an appropriately sized PNG or JPEG before inserting it. This keeps the p
 > **Resizing an image on a slide is not the same as resampling it.** Dragging the handles makes the image occupy less space on the slide, but may leave every original pixel embedded in the presentation.
 
 ### Papers and PDFs
-
 Work backwards from the final printed dimensions.
 
 For example:
@@ -167,13 +164,11 @@ For example:
 Line drawings and fine features may require greater raster resolution. Better still, retain plots, text and other graphical elements as vectors where the publication workflow supports them.
 
 ### Theses and long reports
-
 Use images sized for their final page width rather than inserting full-resolution microscope exports. This keeps Word responsive during editing and helps produce a PDF that supervisors, examiners and collaborators can readily share by email.
 
 The aim is not to reduce everything indiscriminately. Preserve the original data and master images separately, while using appropriately prepared outputs in the working thesis document.
 
 ### Posters
-
 Work from the actual printed dimensions **and the expected viewing distance**. A poster does not automatically require enormous pixel counts merely because the paper is large.
 
 Because posters are normally viewed from further away than papers, photographic elements often do not require 300 ppi at their final printed size. Fine text, line drawings and small details may require more care, so inspect the exported poster PDF at an appropriate scale before printing.
@@ -181,9 +176,7 @@ Because posters are normally viewed from further away than papers, photographic 
 ---
 
 ## 5. What Word and PowerPoint do behind your back
-
 Word and PowerPoint may:
-
 - retain the complete high-resolution source image;
 - resample an image;
 - compress it;
@@ -213,14 +206,11 @@ A well-prepared presentation should open quickly, respond immediately while slid
 ## 6. Composite figures, software tools and interoperability
 
 ### Keep master figures editable
-
 Do not assemble multi-panel publication figures in Word. Use dedicated graphics software such as:
-
 - [Inkscape](https://inkscape.org/);
 - Adobe Illustrator.
 
 A composite scientific figure may contain:
-
 - vector graphs;
 - bitmap micrographs;
 - PNG orientation or strain maps;
@@ -232,7 +222,6 @@ A composite scientific figure may contain:
 Inkscape or Illustrator can retain vector elements as vectors while maintaining control over the resolution of individual bitmap elements. Save the complete assembly as an editable master, then export the required delivery format.
 
 ### Raster editing and resampling
-
 Software such as GIMP provides control over:
 
 - cropping;
@@ -244,7 +233,6 @@ Software such as GIMP provides control over:
 Any scientific image adjustment should be documented and applied consistently. Never make changes that obscure, remove or misrepresent the underlying observations.
 
 ### Batch processing with ImageMagick
-
 ImageMagick can automate repetitive operations across large image sets, including:
 
 - format conversion;
@@ -256,11 +244,9 @@ ImageMagick can automate repetitive operations across large image sets, includin
 Automation is especially valuable when every output must be produced using the same operation rather than adjusted manually one file at a time.
 
 ### Interoperability
-
 Keep plots, labels and diagrams as vectors for as long as practical, but do not assume that every program or submission portal will handle every vector format correctly.
 
 Support can vary between:
-
 - PowerPoint and Word;
 - PDF workflows;
 - graphics packages;
@@ -268,7 +254,6 @@ Support can vary between:
 - different computers and software versions.
 
 Distinguish between:
-
 - **Master format:** editable and preferably vector where appropriate;
 - **Delivery format:** whatever works reliably for the destination.
 
@@ -279,15 +264,12 @@ If a vector graphic must be rasterised, do it deliberately at the required pixel
 ## 7. Animations and video
 
 An animated GIF is a sequence of raster images. The same considerations therefore apply to every frame:
-
 - pixel dimensions;
 - compression;
 - frame rate;
 - file size.
 
-There is little value in producing an enormous GIF from source frames far larger than the presentation can display. GIF support and playback may also be inconsistent.
-
-For presentations, an MP4 video is often a better delivery format. It can normally be:
+There is little value in producing an enormous GIF from source frames far larger than the presentation can display. GIF support and playback may also be inconsistent. For presentations, an MP4 video is often a better delivery format. It can normally be:
 
 - paused at a selected frame;
 - moved forwards or backwards;
@@ -314,8 +296,6 @@ FFmpeg, and graphical applications built around it, can convert image sequences 
 
 ## The payoff
 
-The payoff is mundane but important. Your PowerPoint files remain small, responsive and pleasant to work with. Your thesis does not become a multi-gigabyte Word document that takes minutes to save or crashes during editing. PDFs remain small enough to email to supervisors and collaborators. Figures survive submission systems without unpleasant surprises.
+The payoff is mundane but important. Your PowerPoint files remain small, responsive and pleasant to work with. Your thesis does not become a multi-gigabyte Word document that takes minutes to save or crashes during editing. PDFs remain small enough to email to supervisors and collaborators. Figures survive submission systems without unpleasant surprises. Because the original data and editable masters still exist, none of this convenience comes at the expense of the underlying scientific information.
 
-Because the original data and editable masters still exist, none of this convenience comes at the expense of the underlying scientific information.
-
-**Preserve the master. Design the output. Keep the document usable.**
+And these days, to put this advice into action you can just give your favourite LLM this document and ask it for a script to convert your images into an appropriate format. It's that easy!
