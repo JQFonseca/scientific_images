@@ -50,23 +50,18 @@ These are not redundant copies. They are controlled outputs designed for differe
 The first decision is whether the information is naturally vector or raster. This determines how it should be preserved, edited and exported.
 
 ### Vector graphics
-
 Vector graphics describe lines, curves, shapes and text mathematically. They can be scaled without losing resolution.
-
 They are best suited to:
-
 - graphs and plots;
 - diagrams and schematics;
 - annotations;
 - line drawings;
 - text and symbols.
 
-Typical vector formats include SVG, EPS and vector PDF. Where practical, retain these elements as vectors in the master figure.
+Typical vector formats include SVG, EPS and vector PDF (careful PDF files are usually containers and can contain a big raster image). Where practical, retain these elements as vectors in the master figure.
 
 ### Raster or bitmap images
-
 Raster images consist of a fixed grid of pixels. They are necessary for:
-
 - photographs;
 - micrographs;
 - EBSD maps;
