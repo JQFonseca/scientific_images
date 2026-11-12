@@ -117,15 +117,11 @@ A figure will be printed at 150 mm width and requires 300 ppi.
 
 1. Convert the width to inches:
 
-   $$
-   150 / 25.4 \approx 5.91\text{ inches}
-   $$
+   $$150 / 25.4 \approx 5.91\text{ inches}$$
 
 2. Multiply by the required resolution:
 
-   $$
-   5.91 \times 300 \approx 1770\text{ pixels}
-   $$
+   $$5.91 \times 300 \approx 1770\text{ pixels}$$
 
 The figure therefore needs to be approximately **1770 pixels wide**. This is why screenshots often produce acceptable figures for papers and presentations, depending on how the image is being rendered when the screen shot is taken.
 
