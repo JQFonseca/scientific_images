@@ -101,7 +101,7 @@ Pixel dimensions, physical dimensions and resolution are related, but they are n
 
 - **Pixel dimensions:** for example, `3000 × 2000 pixels`.
 - **Physical dimensions:** for example, `100 mm wide` when printed.
-- **Resolution:** the number of pixels per unit length, normally expressed as pixels per inch (ppi), although publication instructions commonly use dpi.
+- **Resolution:** the number of pixels per unit length, normally expressed as pixels per inch (ppi), although publication instructions commonly use dots per inch or DPI.
 
 The required pixel width can be estimated using:
 
@@ -111,7 +111,7 @@ $$
 
 ### Worked example
 
-A figure will be printed at 150 mm width and requires 300 ppi.
+A figure will be printed at 150 mm width and requires 300 DPI.
 
 1. Convert the width to inches:
 
@@ -141,8 +141,8 @@ Prepare an appropriately sized PNG or JPEG before inserting it. This keeps the p
 Work backwards from the final printed dimensions.
 For example:
 
-- 90 mm wide at 300 ppi requires approximately **1060 pixels**;
-- 180 mm wide at 300 ppi requires approximately **2130 pixels**.
+- 90 mm wide at 300 DPI requires approximately **1060 pixels**;
+- 180 mm wide at 300 DPI requires approximately **2130 pixels**.
 
 Line drawings and fine features may require greater raster resolution. Better still, retain plots, text and other graphical elements as vectors where the publication workflow supports them.
 
