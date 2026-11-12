@@ -76,8 +76,7 @@ Their available detail is ultimately limited by their pixel dimensions. Typical 
 ### Compression of raster images
 
 #### Uncompressed
-
-Pixel values are stored without compression. This retains the data but can produce very large files.
+Pixel values are stored without compression. This retains the data but can produce very large files. Examples are BMP files and usually TIFF files (not always, see below). These are essential for image analysis, but have file sizes that are larger than needed for presentation purposes.
 
 #### Lossless compression
 Lossless compression reduces file size while reconstructing exactly the same pixel values. PNG is the most familiar example.
@@ -90,7 +89,6 @@ It is particularly suitable for:
 
 #### Lossy compression
 Lossy compression discards information to achieve much smaller files. JPEG is the most familiar example.
-
 JPEG can be entirely appropriate for photographs and many micrographs when small pixel-level changes are acceptable. It is usually a poor choice for plots, text, segmentation maps, EBSD maps and similar images containing sharp boundaries because compression artefacts can become visible and the original pixel values are not preserved exactly.
 
 > **TIFF is a container, not a compression method.** A TIFF file may contain uncompressed, losslessly compressed or, in some cases, lossily compressed image data, depending on how it was written.
@@ -141,7 +139,6 @@ Prepare an appropriately sized PNG or JPEG before inserting it. This keeps the p
 
 ### Papers and PDFs
 Work backwards from the final printed dimensions.
-
 For example:
 
 - 90 mm wide at 300 ppi requires approximately **1060 pixels**;
@@ -206,7 +203,6 @@ Software such as GIMP provides control over:
 - image dimensions;
 - pixel resampling;
 - raster export settings.
-
 Any scientific image adjustment should be documented and applied consistently. Never make changes that obscure, remove or misrepresent the underlying observations.
 
 ### Batch processing with ImageMagick
