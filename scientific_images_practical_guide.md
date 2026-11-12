@@ -86,11 +86,8 @@ Their available detail is ultimately limited by their pixel dimensions. Typical 
 Pixel values are stored without compression. This retains the data but can produce very large files.
 
 #### Lossless compression
-
 Lossless compression reduces file size while reconstructing exactly the same pixel values. PNG is the most familiar example.
-
 It is particularly suitable for:
-
 - scientific maps;
 - plots and diagrams;
 - screenshots;
@@ -98,7 +95,6 @@ It is particularly suitable for:
 - images containing sharp lines or colour boundaries.
 
 #### Lossy compression
-
 Lossy compression discards information to achieve much smaller files. JPEG is the most familiar example.
 
 JPEG can be entirely appropriate for photographs and many micrographs when small pixel-level changes are acceptable. It is usually a poor choice for plots, text, segmentation maps, EBSD maps and similar images containing sharp boundaries because compression artefacts can become visible and the original pixel values are not preserved exactly.
@@ -137,7 +133,7 @@ A figure will be printed at 150 mm width and requires 300 ppi.
    5.91 \times 300 \approx 1770\text{ pixels}
    $$
 
-The figure therefore needs to be approximately **1770 pixels wide**.
+The figure therefore needs to be approximately **1770 pixels wide**. This is why screenshots often produce acceptable figures for papers and presentations, depending on how the image is being rendered when the screen shot is taken.
 
 > **Changing the DPI number in a file's metadata is not the same as resampling the image.** Changing a metadata value from 72 dpi to 300 dpi does not create additional pixels or scientific information.
 
@@ -164,14 +160,11 @@ For example:
 Line drawings and fine features may require greater raster resolution. Better still, retain plots, text and other graphical elements as vectors where the publication workflow supports them.
 
 ### Theses and long reports
-Use images sized for their final page width rather than inserting full-resolution microscope exports. This keeps Word responsive during editing and helps produce a PDF that supervisors, examiners and collaborators can readily share by email.
-
-The aim is not to reduce everything indiscriminately. Preserve the original data and master images separately, while using appropriately prepared outputs in the working thesis document.
+Use images sized for their final page width rather than inserting full-resolution microscope exports. The aim is not to reduce everything indiscriminately. Preserve the original data and master images separately, while using appropriately prepared outputs in the working thesis document. Use the size guidance for papers and PDFs above.
 
 ### Posters
 Work from the actual printed dimensions **and the expected viewing distance**. A poster does not automatically require enormous pixel counts merely because the paper is large.
-
-Because posters are normally viewed from further away than papers, photographic elements often do not require 300 ppi at their final printed size. Fine text, line drawings and small details may require more care, so inspect the exported poster PDF at an appropriate scale before printing.
+Because posters are normally viewed from further away than papers, photographic elements often do not require 300 DPI at their final printed size. 150 DPI is usually good enough. Fine text, line drawings and small details may require more care, so inspect the exported poster PDF at an appropriate scale before printing.
 
 ---
 
@@ -184,29 +177,21 @@ Word and PowerPoint may:
 - behave differently depending on settings, export method and software version.
 
 This creates two opposite problems.
-
 ### Problem 1: bloated files
-
-Shrinking a large image with the mouse changes its visible size but does not necessarily remove the underlying pixels. A presentation can consequently become hundreds of megabytes without displaying any additional useful detail.
-
-Such files become slow to open, save, edit and synchronise. They are unpleasant to work with and difficult to share. The same accumulation of oversized images can make a thesis document unstable or too large for normal email attachment limits.
+Shrinking a large image with the mouse changes its visible size but does not necessarily remove the underlying pixels. A presentation can consequently become hundreds of megabytes without displaying any additional useful detail. Such files become slow to open, save, edit and synchronise. They are unpleasant to work with and difficult to share. The same accumulation of oversized images can make a thesis document unstable or too large for normal email attachment limits.
 
 ### Problem 2: uncontrolled degradation
-
-Office may subsequently compress or resample the image, potentially softening text, introducing artefacts or removing scientifically important detail.
+MS Office may subsequently compress or resample the image, potentially softening text, introducing artefacts or removing scientifically important detail.
 
 ### The practical solution
-
-Resize, crop and, where appropriate, resample images before inserting them into an Office document. Prepare the version required for the destination rather than relying on Word or PowerPoint to make the decision.
-
-A well-prepared presentation should open quickly, respond immediately while slides are edited and be straightforward to share through email, Teams, OneDrive or SharePoint. A well-prepared thesis should remain usable in Word and export to a PDF that can be readily circulated.
+Resize, crop and, where appropriate, resample images before inserting them into an Office document. Prepare the version required for the destination rather than relying on Word or PowerPoint to make the decision. A well-prepared presentation should open quickly, respond immediately while slides are edited and be straightforward to share through email, Teams, OneDrive or SharePoint. A well-prepared presentation should remain usable in Word and export to a PDF that can be readily circulated.
 
 ---
 
 ## 6. Composite figures, software tools and interoperability
 
 ### Keep master figures editable
-Do not assemble multi-panel publication figures in Word. Use dedicated graphics software such as:
+Do not assemble multi-panel publication figures in Word. Powerpoint is better but gives you poor control over resolution of individual elements. Use dedicated graphics software such as:
 - [Inkscape](https://inkscape.org/);
 - Adobe Illustrator.
 
@@ -223,7 +208,6 @@ Inkscape or Illustrator can retain vector elements as vectors while maintaining 
 
 ### Raster editing and resampling
 Software such as GIMP provides control over:
-
 - cropping;
 - colour and contrast adjustments;
 - image dimensions;
@@ -234,18 +218,15 @@ Any scientific image adjustment should be documented and applied consistently. N
 
 ### Batch processing with ImageMagick
 ImageMagick can automate repetitive operations across large image sets, including:
-
 - format conversion;
 - downsampling;
 - cropping;
 - removing unnecessary metadata;
 - generating presentation-sized copies.
-
 Automation is especially valuable when every output must be produced using the same operation rather than adjusted manually one file at a time.
 
 ### Interoperability
 Keep plots, labels and diagrams as vectors for as long as practical, but do not assume that every program or submission portal will handle every vector format correctly.
-
 Support can vary between:
 - PowerPoint and Word;
 - PDF workflows;
@@ -262,7 +243,6 @@ If a vector graphic must be rasterised, do it deliberately at the required pixel
 ---
 
 ## 7. Animations and video
-
 An animated GIF is a sequence of raster images. The same considerations therefore apply to every frame:
 - pixel dimensions;
 - compression;
@@ -270,7 +250,6 @@ An animated GIF is a sequence of raster images. The same considerations therefor
 - file size.
 
 There is little value in producing an enormous GIF from source frames far larger than the presentation can display. GIF support and playback may also be inconsistent. For presentations, an MP4 video is often a better delivery format. It can normally be:
-
 - paused at a selected frame;
 - moved forwards or backwards;
 - replayed from a chosen point;
