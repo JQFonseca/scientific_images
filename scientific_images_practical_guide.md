@@ -2,14 +2,13 @@
 
 ## A practical guide for researchers
 
-Every year, researchers end up with presentation files that exceed half a gigabyte, thesis documents that lag or crash word processors, and manuscript figures that turn into pixelated messes during submission. The cause is usually the same: raw, unoptimised images are placed directly into slides or documents in the hope that the software will handle them appropriately.
-
+Every year, researchers end up with massive presentation files, thesis documents that lag or crash word processors, and manuscript figures that turn into pixelated messes during submission. The cause is usually the same: raw, unoptimised images are placed directly into slides or documents in the hope that the software will handle them appropriately.
 Taking control of your image workflow does more than prevent software crashes. It solves two important sharing problems:
 
 - **Shareability:** Unoptimised files quickly become too large to send by email or upload to repository and journal portals. Appropriately sized images produce lightweight documents that are easier to distribute.
-- **Accessibility:** Colleagues, supervisors and conference audiences may view your work on mobile devices, modest laptops or slow internet connections. Properly prepared files open quickly without overwhelming their computers.
+- **Accessibility:** Colleagues, supervisors and conference audiences may view your work on mobile devices, modest laptops or slow internet connections. Properly prepared files open quickly without overwhelming the hardware. 
 
-The benefits are practical. PowerPoint files remain responsive and pleasant to edit and present. Thesis documents remain usable in Word, and the resulting PDFs can be small enough to circulate by email. Figures also survive journal submission systems with fewer unpleasant surprises.
+The benefits are practical. You collaborators can reuse your slides, images and documents with having to reconvert them or lose detail. PowerPoint files remain responsive and pleasant to edit and present. Thesis documents remain usable in Word, and the resulting PDFs can be small enough to circulate by email. Figures also survive journal submission systems with fewer unpleasant surprises.
 
 > **Core principle:** Always retain the best editable or original version of an image as the **master**, then deliberately export different versions for specific destinations such as papers, presentations and posters.
 
