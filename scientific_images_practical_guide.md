@@ -173,6 +173,9 @@ Shrinking a large image with the mouse changes its visible size but does not nec
 ### Problem 2: uncontrolled degradation
 MS Office may subsequently compress or resample the image, potentially softening text, introducing artefacts or removing scientifically important detail.
 
+#### Problem 3: incompatibility
+Different versions of word, different word previewers and even the same version of word but on different operating systems all handle these conversions differently. For example, if you insert a vector format image in word for mac it creates two raster copies of the same image (one for displaying on Macs one for displaying on PCs), keeps them all on file, and then shows you the one it thinks is appropriate depending on which machine you are using to view the presentation. This often doesn't work well.
+
 ### The practical solution
 Resize, crop and, where appropriate, resample images before inserting them into an Office document. Prepare the version required for the destination rather than relying on Word or PowerPoint to make the decision. A well-prepared presentation should open quickly, respond immediately while slides are edited and be straightforward to share through email, Teams, OneDrive or SharePoint. A well-prepared presentation should remain usable in Word and export to a PDF that can be readily circulated.
 
